@@ -2,5 +2,5 @@
 <script src="dat.js"></script>
 <script src="main.js"></script>
 <script>
-    document.write(Array.from({length: 500}).map(() => getChar()).join("")+"。");
+    document.write(Array.from({length: 500}).map(() => getChar()).join("").replace(/([。，])[。，]/, "$1")+"。");
 </script>
