@@ -1,0 +1,6 @@
+<!doctype html>
+<script src="syllable_dat.js"></script>
+<script src="main2.js"></script>
+<script>
+    document.write(Array.from({length: 250}).map(() => get_first_syllable()+get_second_syllable()).join("<br>"));
+</script>
