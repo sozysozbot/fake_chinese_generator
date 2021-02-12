@@ -2,5 +2,8 @@
 <script src="dat.js"></script>
 <script src="main.js"></script>
 <script>
-    document.write(Array.from({length: 500}).map(() => getChar()).join("").replace(/([。，])[。，]/, "$1")+"。");
+    const text = Array.from({length: 500}).map(() => getChar()).join("").replace(/([。，])[。，]/, "$1")+"。"
+    document.write(`<span lang="zh">${text}</span>`);
+
+    document.write(`<br><br><a href="https://translate.google.com/?sl=zh-CN&tl=zh-CN&text=${text}">Listen in Google Translate / <span lang="zh">用谷歌翻译听这个</span> / <span lang="ja">Google翻訳で聞く</span></a>`)
 </script>
